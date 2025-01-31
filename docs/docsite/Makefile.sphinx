@@ -5,7 +5,7 @@
 DOCS_VARIANTS ?=
 SPHINXCONFDIR = rst
 LANGOPTS      ?=
-SPHINXOPTS    ?= -j $(CPUS) -n -w rst_warnings -c "$(SPHINXCONFDIR)" $(DOCS_VARIANTS) $(LANGOPTS)
+SPHINXOPTS    ?= -b linkcheck -j $(CPUS) -n -w rst_warnings -c "$(SPHINXCONFDIR)" $(DOCS_VARIANTS) $(LANGOPTS)
 SPHINXBUILD   = sphinx-build
 SPHINXPROJ    = sdfsdf
 SOURCEDIR     = rst

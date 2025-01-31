@@ -384,5 +384,11 @@ intersphinx_mapping = {
 # linckchecker settings
 linkcheck_ignore = [
 ]
-linkcheck_workers = 25
+linkcheck_workers = 5
 # linkcheck_anchors = False
+linkcheck_timeout  = 10
+
+# ignore all links in documents located in a subdirectory named 'rst'
+#linkcheck_exclude_documents = [(r'.*/.*')]
+linkcheck_exclude_documents = [(r'collections/ansible/.*'),
+                              (r'community/.*')]
